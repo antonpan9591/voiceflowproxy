@@ -24,4 +24,5 @@ def zadarma_webhook():
         }
     )
 
-    return jsonify({"status": "forwarded", "vf_status": vf_response.status_code}), 200
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
